@@ -7,9 +7,9 @@ import CommentDetail from './CommentDetail';
 const App = () => {
     return (
         <div className="ui container comments">
-           <CommentDetail author={faker.name.firstName()} timeAgo="6:00PM" comment={faker.lorem.sentence()}/> 
-           <CommentDetail author={faker.name.firstName()} timeAgo="5:54PM" comment={faker.lorem.sentence()}/> 
-           <CommentDetail author={faker.name.firstName()} timeAgo="5:50PM" comment={faker.lorem.sentence()}/> 
+           <CommentDetail avatar={faker.image.avatar()} author={faker.name.firstName()} timeAgo="6:00PM" comment={faker.lorem.sentence()}/> 
+           <CommentDetail avatar={faker.image.avatar()} author={faker.name.firstName()} timeAgo="5:54PM" comment={faker.lorem.sentence()}/> 
+           <CommentDetail avatar={faker.image.avatar()} author={faker.name.firstName()} timeAgo="5:50PM" comment={faker.lorem.sentence()}/> 
         </div>
     )
 };
